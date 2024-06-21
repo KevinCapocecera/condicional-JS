@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="funcoes.js"></script>
+    <title>Exercício 10</title>
+</head>
+
+<body>
+
+    <script>
+        //123 tem que ser impresso 321
+
+        var numero = 123
+
+        var centena = 0
+
+        centena = numero / 100
+
+        var dezena = (numero % 100)/10
+
+        var unidade = numero % 10
+
+        document.write("O numero " + numero +  " invertido é: " + parseInt(unidade) + "" + parseInt(dezena) + "" + parseInt(centena) )         
+        pulaLinha()
+        document.write(parseInt(unidade))    
+        document.write(parseInt(dezena))  
+        document.write(parseInt(centena))
+        
+        
+
+    </script>
+</body>
+
+</html>

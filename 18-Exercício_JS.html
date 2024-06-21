@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="funcoes.js"></script>
+    <title>Exercício 18</title>
+</head>
+
+<body>
+
+    <script>
+        // Solicita ao usuário que digite o tipo de combustível (A - álcool, G - gasolina)
+        var combustivel = prompt("Digite o combustível sendo A - álcool e G - gasolina: ")
+        // Solicita ao usuário que digite a quantidade de litros
+        var litros = parseFloat(prompt("Digite a quantidade de litros: "))
+        // Define o preço do álcool e da gasolina
+        var alcool = 1.90
+        var gasolina = 2.70
+
+        document.write("Exercício 18");
+        pulaLinha();
+
+        // Verifica o tipo de combustível e a quantidade de litros para calcular o valor a ser pago
+        if (combustivel == "a" || combustivel == "A" && litros <= 25) {
+            document.write("O valor a ser pago é de: " + ((alcool * litros) * 0.98).toFixed(2));
+        } else if (combustivel == "a" || combustivel == "A" && litros > 25) {
+            document.write("O valor a ser pago é de: " + ((alcool * litros) * 0.96).toFixed(2));
+        } else if (combustivel == "g" || combustivel == "G" && litros <= 25) {
+            document.write("O valor a ser pago é de: " + ((gasolina * litros) * 0.97).toFixed(2));
+        } else if (combustivel == "g" || combustivel == "G" && litros > 25) {
+            document.write("O valor a ser pago é de: " + ((gasolina * litros) * 0.95).toFixed(2));
+        } else;
+
+    </script>
+</body>
+
+</html>

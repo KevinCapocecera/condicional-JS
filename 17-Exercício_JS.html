@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="funcoes.js"></script>
+    <title>Exercício 17</title>
+</head>
+
+<body>
+
+    <script>
+        // Solicita ao usuário que digite uma letra
+        var letra = prompt("Digite uma letra: ").toLowerCase()
+
+        document.write("Exercício 17");
+        pulaLinha();
+
+        // Verifica se a letra é uma vogal
+        if (letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u' || letra == 'y' || letra == 'w') {
+            document.write("A letra " + letra.toUpperCase() + " é uma Vogal")
+        } else {
+            // Se não for uma vogal, é uma consoante
+            document.write("A letra " + letra.toUpperCase() + " é uma Consoante")
+        }
+
+    </script>
+</body>
+
+</html>

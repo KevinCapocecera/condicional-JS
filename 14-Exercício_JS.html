@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="funcoes.js"></script>
+    <title>Exercício 14</title>
+</head>
+
+<body>
+
+    <script>
+        var n1= parseInt(prompt("Digite um numero "))
+        var n2= parseInt(prompt("Digite outro numero "))
+        var n3= parseInt(prompt("Digite mais um numero "))
+        var maior = 0
+        
+
+        document.write("Exercício 14");
+        pulaLinha();
+        if(n1 > n2 && n1 > n3){
+            maior = n1
+        }else if(n2 > n1 && n2 > n3){
+            maior = n2
+        }else if(n3 > n1 && n3 > n2){
+            maior = n3
+        }
+
+        document.write("O maior número é: " + maior)
+
+        
+       
+        
+
+    </script>
+</body>
+
+</html>

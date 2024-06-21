@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="funcoes.js"></script>
+    <title>Exercício 16</title>
+</head>
+
+<body>
+
+    <script>
+        var n1 = parseInt(prompt("Digite um numero "))
+        var n2 = parseInt(prompt("Digite outro numero "))
+        var n3 = parseInt(prompt("Digite mais um numero "))
+
+
+        document.write("Exercício 16");
+        pulaLinha();
+        if(n1>n2 && n1>n3 && n2>n3){
+            document.write("A soma dos dois maiores é: " + soma(n1, n2))
+        }else if(n1>n2 && n1>n3 && n3>n2){
+            document.write("A soma dos dois maiores é: " + soma(n1, n3))
+        }else if(n2>n1 && n2>n3 && n1>n3){
+            document.write("A soma dos dois maiores é: " + soma(n2, n1))
+        }else if(n2>n1 && n2>n3 && n3>n1){
+            document.write("A soma dos dois maiores é: " + soma(n2, n3))
+        }else if(n3>n1 && n3>n2 && n1>n2){
+            document.write("A soma dos dois maiores é: " + soma(n3, n1))
+        }else if(n3>n1 && n3>n2 && n2>n1){
+            document.write("A soma dos dois maiores é: " + soma(n3, n2))
+        }else;
+        
+
+    </script>
+</body>
+
+</html>
